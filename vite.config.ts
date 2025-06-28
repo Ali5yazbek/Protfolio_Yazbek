@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // tell Vite where your site will be served
+  base: "/Protfolio_Yazbek/",
+
   server: {
     host: "::",
     port: 8080,
@@ -19,6 +22,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "build",    // ← add this block
+    outDir: "build",
   },
 }));
